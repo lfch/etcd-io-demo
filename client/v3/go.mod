@@ -20,12 +20,8 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace (
-	github.com/lfch/etcd-io-demo/api/v3 => ../../api
-)
+replace github.com/lfch/etcd-io-demo/api/v3 => ../../api
 
-require (
-	github.com/lfch/etcd-io-demo/api/v3 v3.0.1
-)
+require github.com/lfch/etcd-io-demo/api/v3 v3.0.2
 
 replace google.golang.org/grpc => github.com/lfch/grpc v1.51.4
