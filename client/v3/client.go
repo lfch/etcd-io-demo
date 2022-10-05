@@ -1,6 +1,7 @@
 package clientv3
 
 import (
+	"github.com/lfch/etcd-io-demo/api/v3/rpctypes"
 	"google.golang.org/grpc"
 )
 
@@ -18,4 +19,8 @@ func NewClient(cfg *Config) (*Client, error) {
 		conn: nil,
 	}
 	return cli, nil
+}
+
+func (c *Client) DoRPC() error {
+	return rpctypes.ErrEmptyKey
 }

@@ -9,11 +9,8 @@ require (
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
-	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013 // indirect
-	google.golang.org/protobuf v1.27.1 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
+	google.golang.org/genproto v0.0.0-20200825200019-8632dd797987 // indirect
+	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace (
-	google.golang.org/grpc => github.com/lfch/grpc v1.51.4
-)
+replace google.golang.org/grpc => github.com/lfch/grpc v1.51.4
